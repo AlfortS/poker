@@ -73,22 +73,27 @@
     <section class="section">
       <div class="messeage">
         <div class="messeage__text">
-          <h2>はじめてポーカーを<br>プレイするあなたへ</h2>
+          <h2>はじめてポーカーを<br class="pc_only">プレイするあなたへ</h2>
           <p>
             ポーカー（テキサスホールデム）は、世界中で1億人以上のプレイヤー人口を持ち、マインドスポーツとして注目を集めるトランプを使った頭脳ゲームです。<br>
             まずは、ポーカーの世界をのぞいてみましょう。
           </p>
-          <div class="btn">
+          <div class="btn pc_only">
             <a href="./about/index.html" class="btn-primary-background"><span class="btn-primary-text">ポーカーとは</span></a>
           </div>
           <!-- <div class="btn">
             <a href="" class="btn-transparent-background"><span class="btn-transparent-text">ポーカーとは</span></a>
           </div> -->
         </div>
-        <picture class="messeage__image">
-          <srcset="./images/poker_01.jpg" media="(max-width: 767px)"></srcset>
-          <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
-        </picture>
+        <div class="messeage__image">
+          <picture>
+            <srcset="./images/poker_01.jpg" media="(max-width: 767px)"></srcset>
+            <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
+          </picture>
+          <div class="btn sp_only">
+            <a href="./about/index.html" class="btn-primary-background"><span class="btn-primary-text">ポーカーとは</span></a>
+          </div>
+        </div>
       </div>
     </section>
     <section id="js-flop" class="section bg-purple">

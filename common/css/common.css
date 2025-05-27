@@ -180,6 +180,12 @@ h2 {
 	font-weight: bold;
 	line-height: 1.5;
 }
+@media screen and (max-width: 1024px) {
+  h2 {
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+}
 p {
   margin-bottom: 12px;
   color: #515151;
@@ -193,6 +199,22 @@ p:last-child {
 .text-bold {
   color: #000;
   font-weight: bold;
+}
+
+/* PC/SPによって表示・非表示 */
+.pc_only {
+  display: block;
+}
+.sp_only {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .pc_only {
+    display: none;
+  }
+  .sp_only {
+    display: block;
+  }
 }
 
 .section {
@@ -220,7 +242,7 @@ p:last-child {
 .btn {
   max-width: 300px;
   width: 100%;
-  text-align: center;
+  margin: 0 auto;
 }
 .btn-primary-background {
   position: relative;
@@ -244,9 +266,11 @@ p:last-child {
   transition: all 0.2s;
 }
 .btn-primary-text {
+  display: block;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 .btn-primary-background:hover {
   opacity: 0.8;
@@ -285,8 +309,10 @@ p:last-child {
   transition: transform ease .3s;
 }
 .btn-transparent-text {
+  display: block;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 .btn-transparent-background:hover {
   color: #fff;
