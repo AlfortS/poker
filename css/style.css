@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+
+/* keyvisual */
+.keyvisual {
+  position: relative;
+  width: 100%;
+  height: 100svh;
+  background: linear-gradient(90deg, #4c3268 0%, #0a054f 100%);
+}
+.keyvisual h1 {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.keyvisual h1 img {
+	display: block;
+	width: 800px;
+}
+@media screen and (max-width: 1024px) {
+	.keyvisual h1 img {
+		margin: 0 auto;
+		width: 280px;
+	}
+}
+/* スクロールダウン全体の場所 */
+.scrolldown {
+  position: absolute;
+	left: 50%;
+	bottom: 10px;
+	height: 50px;
+}
+/* Scrollテキストの描写 */
+.scrolldown span {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+}
+/* 線の描写 */
+.scrolldown::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 1px;
+	height: 30px;
+	background: #fff;
+	animation: pathmove 1.4s ease-in-out infinite;
+	opacity: 0;
+}
+/* 高さ・位置・透過が変化して線が上から下に動く */
+@keyframes pathmove {
+	0% {
+		height: 0;
+		top: 0;
+		opacity: 0;
+	}
+	30% {
+		height: 30px;
+		opacity: 1;
+	}
+	100% {
+		height: 0;
+		top: 50px;
+		opacity: 0;
+	}
+}
+/* はじめてポーカーをプレイするあなたへ */
+.messeage {
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 32px;
+}
+.messeage__text {
+	width: 40%;
+}
+.messeage__image {
+	width: 50%;
+}
+.messeage__image img {
+	width: 100%;
+	border-radius: 50px;
+}
+.messeage .btn {
+	margin-top: 50px;
+}
+/* ポーカーを知ろう */
+.bg-purple {
+	background: #291e5c;
+	/* background: linear-gradient(90deg, #4c3268 0%, #0a054f 100%); */
+}
+.poker {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 32px;
+}
+.poker h2 {
+	color: #fff;
+}
+/* .poker__board {
+	margin: 40px calc(50% - 48vw);
+	padding: 60px 40px;
+	width: 96vw;
+	border: 20px solid #fff;
+	border-radius: 250px;
+}
+.poker__communitycard {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 0 40px;
+	max-width: 1200px;
+}
+.poker__card {
+	width: 18%;
+	height: 300px;
+	border-radius: 15px;
+	text-decoration: none;
+}
+.poker__card-flont {
+	width: 100%;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 30px;
+	backface-visibility: hidden;
+} */
+
+

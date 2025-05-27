@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポーカーについて学んでみましょう！">
+  <meta name="format-detection" content="telephone=no">
+  <!-- OGP(Open Graph Protoco) -->
+  <meta property="og:site_name" content="Let's FLOP">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Let's FLOP">
+  <meta property="og:description" content="ポーカーについて学んでみましょう！">
+  <meta property="og:image" content="URL">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <!-- <meta name="twitter:site" content=""> -->
+  <!-- <meta name="twitter:image:src" content="URL"> -->
+  <!-- <link rel="icon" href=""> --><!-- ファビコン -->
+  <!-- <link rel="apple-touch-icon" href=""> --><!-- Webクリップアイコン -->
+  <!-- <link rel="canonical" href=""> --><!-- カノニカルタグ -->
+  <link rel="stylesheet" href="./common/css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./common/css/common.css" type="text/css">
+  <link rel="stylesheet" href="./common/css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script type="text/javascript" src="./common/js/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
+  <script type="text/javascript" src="./common/js/main.js"></script>
+  <title>Let's FLOP</title>
+</head>
+<body>
+  <header class="header js-header">
+    <div class="header__nav_main">
+      <a class="header__logo" href="/">
+        <img src="./common/images/logo_white.png" alt="ロゴ">
+      </a>
+      <ul class="header__menu">
+        <li class="header__menu-link"><a href="./about/index.html">ポーカーとは</a></li>
+        <li class="header__menu-link"><a href="#">記事一覧</a></li>
+        <li class="header__menu-link"><a href="#">オッズ計算</a></li>
+        <li class="header__menu-link"><a href="#">よくある質問</a></li>
+        <li class="header__btn"><a href="#">ROOTS</a></li>
+      </ul>
+    </div>
+    <div class="header__nav_sub">
+      <div class="header__nav_top">
+        <a class="header__logo" href="/">
+          <img src="./common/images/logo_white.png" alt="ロゴ">
+        </a>
+        <div class="hamburger__menu">
+          <div class="hamburger__menu-line"></div>
+          <div class="hamburger__menu-line"></div>
+          <div class="hamburger__menu-line"></div>
+        </div>
+      </div>
+      <div class="header__menu-sp">
+        <ul>
+          <li><a href="./about/index.html">ポーカーとは</a></li>
+          <li><a href="#">記事一覧</a></li>
+          <li><a href="#">オッズ計算</a></li>
+          <li><a href="#">よくある質問</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="keyvisual fv">
+        <h1><img src="./common/images/logo_text_white.png" alt="LET'S FLOP"></h1>
+        <div class="scrolldown"><span>Scroll</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="messeage">
+        <div class="messeage__text">
+          <h2>はじめてポーカーを<br>プレイするあなたへ</h2>
+          <p>
+            ポーカー（テキサスホールデム）は、世界中で1億人以上のプレイヤー人口を持ち、マインドスポーツとして注目を集めるトランプを使った頭脳ゲームです。<br>
+            まずは、ポーカーの世界をのぞいてみましょう。
+          </p>
+          <div class="btn">
+            <a href="./about/index.html" class="btn-primary-background"><span class="btn-primary-text">ポーカーとは</span></a>
+          </div>
+          <!-- <div class="btn">
+            <a href="" class="btn-transparent-background"><span class="btn-transparent-text">ポーカーとは</span></a>
+          </div> -->
+        </div>
+        <picture class="messeage__image">
+          <srcset="./images/poker_01.jpg" media="(max-width: 767px)"></srcset>
+          <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
+        </picture>
+      </div>
+    </section>
+    <section id="js-flop" class="section bg-purple">
+      <div class="poker">
+        <h2>●●●●●</h2>
+        <div class="poker__board">
+          <div class="poker__communitycard">
+            <div class="poker__card">
+              <div class="poker__card-flont"></div>
+              <div class="poker__card-back"></div>
+            </div>
+            <div class="poker__card">
+              <div class="poker__card-flont"></div>
+              <div class="poker__card-back"></div>
+            </div>
+            <div class="poker__card">
+              <div class="poker__card-flont"></div>
+            </div>
+            <div class="poker__card">
+              <div class="poker__card-flont"></div>
+            </div>
+            <div class="poker__card">
+              <div class="poker__card-flont"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="messeage">
+        <div class="messeage__text">
+          <h2>●●●●●</h2>
+          <p>●●●●●●●●●●●●●●●●●●●●</p>
+        </div>
+        <div class="messeage__image">
+          <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- <footer>
+    フッター
+  </footer> -->
+</body>
+</html>
