@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+.ttl__area {
+  position: relative;
+  width: 100%;
+  height: 375px;
+  background-image: url(./../images/about_fv.jpg);
+  filter: grayscale(50%);
+  background-position: center;
+  background-size: cover;
+}
+.ttl__area h1 {
+  position: absolute;
+  margin: 0;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* パンくずリスト */
+.breadcrumb__area {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap; /* リストが折り返すように */
+  list-style: none; /* リストスタイルを無しに */
+}
+.breadcrumb li {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+}
+.breadcrumb li:not(:last-of-type)::after {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: "\f105"; /* 区切り文字 */
+  margin: 0 6px; /* 区切り文字の左右の余白 */
+}
+.breadcrumb li a {
+  color: #fff;
+  font-weight: 900;
+  /* text-decoration: none; */
+  transition: all 0.2s;
+}
+.breadcrumb li a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.content__area {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.lead {
+  color: #515151;
+  font-size: 16px;
+}
+.lead:last-child {
+  margin-bottom: 0;
+}
+.lead a {
+  color: #000;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.lead a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+/* テキサスホールデムとは */
+#texasholdem {
+  padding-top: 60px;
+}
+h2 {
+  margin-bottom: 32px;
+  padding: 5px 20px;
+	color: #291e5c;
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1.5;
+  border-left: 4px solid #291e5c;
+}
+/* 役の強さ */
+.pokerHands {
+  padding: 30px 0;
+}
+.pokerHands__list {
+  list-style: none;
+}
+.pokerHands__list li {
+  
+}
+.pokerHands__list li a {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.2s;
+}
