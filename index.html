@@ -25,16 +25,17 @@
   <link rel="stylesheet" href="./css/style.css" type="text/css">
   <script type="text/javascript" src="./common/js/jquery-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.5.2.js"></script>
-  <script type="text/javascript" src="./common/js/main.js"></script>
+  <script type="text/javascript" src="./common/js/common.js"></script>
   <title>Let's FLOP</title>
 </head>
 <body>
   <header class="header js-header">
     <div class="header__nav_main">
-      <a class="header__logo" href="/">
+      <a class="header__logo" href="index.html">
         <img src="./common/images/logo_white.png" alt="ロゴ">
       </a>
       <ul class="header__menu">
+        <li class="header__menu-link"><a href="./index.html">TOP</a></li>
         <li class="header__menu-link"><a href="./about/index.html">ポーカーとは</a></li>
         <li class="header__menu-link"><a href="#">記事一覧</a></li>
         <li class="header__menu-link"><a href="#">オッズ計算</a></li>
@@ -44,7 +45,7 @@
     </div>
     <div class="header__nav_sub">
       <div class="header__nav_top">
-        <a class="header__logo" href="/">
+        <a class="header__logo" href="index.html">
           <img src="./common/images/logo_white.png" alt="ロゴ">
         </a>
         <div class="hamburger__menu">
@@ -55,6 +56,7 @@
       </div>
       <div class="header__menu-sp">
         <ul>
+          <li><a href="./index.html">ポーカーとは</a></li>
           <li><a href="./about/index.html">ポーカーとは</a></li>
           <li><a href="#">記事一覧</a></li>
           <li><a href="#">オッズ計算</a></li>
@@ -64,6 +66,7 @@
     </div>
   </header>
   <main>
+    <div id="cursor" class="cursor"></div>
     <section class="section">
       <div class="keyvisual fv">
         <h1><img src="./common/images/logo_text_white.png" alt="LET'S FLOP"></h1>
@@ -86,17 +89,43 @@
           </div> -->
         </div>
         <div class="messeage__image">
-          <picture>
-            <srcset="./images/poker_01.jpg" media="(max-width: 767px)"></srcset>
-            <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
-          </picture>
-          <div class="btn sp_only">
-            <a href="./about/index.html" class="btn-primary-background"><span class="btn-primary-text">ポーカーとは</span></a>
-          </div>
+          <a href="./about/index.html">
+            <img src="./images/poker_01.jpg" alt="ポーカーとは">
+            <div class="messeage__image_text">
+              <p>ポーカーとは</p>
+              <div class="messeage__arrow"></div>
+            </div>
+          </a>
         </div>
       </div>
     </section>
-    <section id="js-flop" class="section bg-purple">
+
+    
+    <section class="section bg-purple">
+      <div class="messeage">
+        <div class="messeage__text">
+          <h2>はじめてポーカーを<br class="pc_only">プレイするあなたへ</h2>
+          <p>
+            ポーカー（テキサスホールデム）は、世界中で1億人以上のプレイヤー人口を持ち、マインドスポーツとして注目を集めるトランプを使った頭脳ゲームです。<br>
+            まずは、ポーカーの世界をのぞいてみましょう。
+          </p>
+          <div class="btn pc_only">
+            <a href="./about/index.html" class="btn-primary-background"><span class="btn-primary-text">ポーカーとは</span></a>
+          </div>
+        </div>
+        <div class="messeage__image">
+          <a href="./about/index.html">
+            <img src="./images/poker_01.jpg" alt="ポーカーとは">
+            <div class="messeage__image_text">
+              <p>ポーカーとは</p>
+              <div class="messeage__arrow"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="js-flop" class="section bg-purple">
       <div class="poker">
         <h2>●●●●●</h2>
         <div class="poker__board">
@@ -120,18 +149,10 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="messeage">
-        <div class="messeage__text">
-          <h2>●●●●●</h2>
-          <p>●●●●●●●●●●●●●●●●●●●●</p>
+        <div class="image-with-overlay">
+          <img src="./images/poker_01.jpg" alt="ポーカーの画像">
         </div>
-        <div class="messeage__image">
-          <img src="./images/poker_01.jpg" alt="ポーカーのイメージ">
-        </div>
-      </div>
+      </div> -->
     </section>
   </main>
   <!-- <footer>

@@ -25,7 +25,8 @@ $(function(){
   // #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
   $('a[href^="#"]').on("click",function(){
     // 移動先を100px調整する。100を30にすると30px下にずらすことができる。
-    var adjust = 100;
+    var pc_adjust = 96; // PC画面時のヘッダーの高さ
+    var sp_adjust = 80; // SP画面時のヘッダーの高さ
     // スクロールの速度（ミリ秒）
     var speed = 400;
     // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
@@ -33,7 +34,13 @@ $(function(){
     // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
     var target = $(href == "#" || href == "" ? 'html' : href);
     // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
-    var position = target.offset().top - adjust;
+
+    if (window.matchMedia('(min-width: 1000px)').matches){
+      var position = target.offset().top - pc_adjust;
+    }
+    else {
+      var position = target.offset().top - sp_adjust;
+    }
     // スムーススクロール linear（等速） or swing（変速）
     $('body,html').animate({scrollTop:position}, speed, 'swing');
     return false;
