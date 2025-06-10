@@ -23,7 +23,7 @@ $(function() {
 /* 参考：https://125naroom.com/web/2899 */
 $(function(){
   // #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
-  $('a[href^="#"]').on("click",function(){
+  $('a[href^="#"]:not(.pokerHands__list a)').on("click",function(e){
     // 移動先を100px調整する。100を30にすると30px下にずらすことができる。
     var pc_adjust = 96; // PC画面時のヘッダーの高さ
     var sp_adjust = 80; // SP画面時のヘッダーの高さ
