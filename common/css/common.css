@@ -265,6 +265,19 @@ html,body,a{
   height: 70px;
   background: rgba(205, 114, 113, 0.5);
 }
+@media screen and (max-width: 1024px) {
+  html,body,a{
+    cursor: auto;
+  }
+  .cursor {
+    position: relative;
+    pointer-events: all;
+    background: transparent;
+  }
+  .cursor.cursor--hover {
+    background: none;
+  }
+}
 
 .section {
   position: relative;
