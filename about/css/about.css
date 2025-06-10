@@ -216,6 +216,9 @@ h3 {
 	line-height: 1.5;
   border-left: 4px solid #291e5c;
 }
+.sub_pokerHands_name {
+  font-size: 14px;
+}
 @media screen and (max-width: 1024px) {
   h3 {
     margin-bottom: 24px;

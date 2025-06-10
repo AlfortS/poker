@@ -130,87 +130,112 @@
               </ol>
               <div class="pokerHands_detail">
                 <div id="royalflush" class="pokerHands_content">
-                  <h3>ロイヤルストレートフラッシュ</h3>
+                  <h3>ロイヤルストレートフラッシュ<span class="sub_pokerHands_name">（Royal Flush）</span></h3>
                   <img src="./../about/images/royalflush.png" alt="ロイヤルストレートフラッシュの役の画像">
                   <p>
-                    5枚の数字が番号順ですべて同じスート（マーク）の組み合わせの中で10からAまで揃えたストレートフラッシュ<br>
-                    ポーカーの役の中で一番強く、0.0032%の確率で完成します
+                    同じスート（マーク）で、数字が10,J,Q,K,Aと連続している5枚の組み合わせ<br>
+                    ポーカーの役の中で1番強い役<br>
+                    テキサスホールデムでの確率: 約0.0032%
                   </p>
                 </div>
                 <div id="straightflush" class="pokerHands_content">
-                  <h3>ストレートフラッシュ</h3>
+                  <h3>ストレートフラッシュ<span class="sub_pokerHands_name">（Straight Flush）</span></h3>
                   <img src="./../about/images/straightflush.png" alt="ストレートフラッシュの役の画像">
                   <p>
-                    5枚の数字が番号順ですべて同じスート（マーク）の組み合わせ<br>
-                    0.027%の確率で完成します
+                    同じスート（マーク）で、数字が連続している5枚の組み合わせ<br>
+                    テキサスホールデムでの確率: 約0.0311%
                   </p>
                   <ul class="asterisk" class="pokerHands_content">
-                    <li>ストレートフラッシュの中で一番弱い組み合わせはA,2,3,4,5</li>
+                    <li>ストレートフラッシュの中で1番弱い組み合わせはA,2,3,4,5</li>
                   </ul>
                 </div>
                 <div id="quads" class="pokerHands_content">
-                  <h3>フォーカード</h3>
+                  <h3>フォーカード<span class="sub_pokerHands_name">（Four of a Kind / Quads）</span></h3>
                   <img src="./../about/images/quads.png" alt="フォーカードの役の画像">
                   <p>
-                    同じ数字が4枚の組み合わせ<br>
-                    0.17%の確率で完成します
+                    同じ数字のカードが4枚と、残り1枚の任意のカードの組み合わせ<br>
+                    テキサスホールデムでの確率: 約0.168%
                   </p>
                 </div>
                 <div id="fullhouse" class="pokerHands_content">
-                  <h3>フルハウス</h3>
+                  <h3>フルハウス<span class="sub_pokerHands_name">（Full House）</span></h3>
                   <img src="./../about/images/fullhouse.png" alt="フルハウスの役の画像">
                   <p>
-                    同じ数字が3枚とワンペアの組み合わせ<br>
-                    2.6%の確率で完成します
+                    同じ数字のカードが3枚（スリーカード）と、別の同じ数字のカードが2枚（ワンペア）の組み合わせ<br>
+                    テキサスホールデムでの確率: 約2.59%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>スリーカードの数字が強い方が優先され、次にワンペアの数字が強い方が優先されます</li>
+                  </ul>
                 </div>
                 <div id="flush" class="pokerHands_content">
-                  <h3>フラッシュ</h3>
+                  <h3>フラッシュ<span class="sub_pokerHands_name">（Flush）</span></h3>
                   <img src="./../about/images/flush.png" alt="フラッシュの役の画像">
                   <p>
-                    5枚のカードがすべて同じスート（マーク）の組み合わせ<br>
-                    3.0%の確率で完成します
+                    5枚のカードすべてが同じスート（マーク）である組み合わせ<br>
+                    テキサスホールデムでの確率: 約3.03%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>数字の連続は問いません</li>
+                    <li>1番強い数字を持つフラッシュが優先されます</li>
+                  </ul>
                 </div>
                 <div id="straight" class="pokerHands_content">
-                  <h3>ストレート</h3>
+                  <h3>ストレート<span class="sub_pokerHands_name">（Straight）</span></h3>
                   <img src="./../about/images/straight.png" alt="ストレートの役の画像">
                   <p>
-                    5枚の数字が番号順の組み合わせ<br>
-                    4.6%の確率で完成します
+                    スート（マーク）はバラバラでも、数字が連続する5枚のカードの組み合わせ<br>
+                    テキサスホールデムでの確率: 約4.62%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>1番強い数字を持つストレートが優先されます</li>
+                  </ul>
                 </div>
                 <div id="trips" class="pokerHands_content">
-                  <h3>スリーカード</h3>
+                  <h3>スリーカード<span class="sub_pokerHands_name">（Three of a Kind / Set / Trips）</span></h3>
                   <img src="./../about/images/trips.png" alt="スリーカードの役の画像">
                   <p>
-                    同じ数字が3枚の組み合わせ<br>
-                    4.8%の確率で完成します
+                    同じ数字のカードが3枚と、残り2枚の数字がバラバラのカードの組み合わせ<br>
+                    テキサスホールデムでの確率: 約4.83%
                   </p>
                 </div>
                 <div id="twopair" class="pokerHands_content">
-                  <h3>ツーペア</h3>
+                  <h3>ツーペア<span class="sub_pokerHands_name">（Two Pair）</span></h3>
                   <img src="./../about/images/twopair.png" alt="ツーペアの役の画像">
                   <p>
-                    同じ数字が2組揃う組み合わせ<br>
-                    23.5%の確率で完成します
+                    同じ数字のカードが2枚（ワンペア）が2組と、残り1枚の数字がバラバラのカードの組み合わせです<br>
+                    テキサスホールデムでの確率: 約23.50%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>1番強いペアを持つ方が優先され、次に2番目のペアが強い方が優先されます</li>
+                    <li>どちらのペアも同じ場合は、残りの1枚のカード（キッカー）の数字が強い方が優先されます</li>
+                    <!-- モーダルで場面をわかりやすく画像とテキストで表示予定 -->
+                  </ul>
                 </div>
                 <div id="onepair" class="pokerHands_content">
-                  <h3>ワンペア</h3>
+                  <h3>ワンペア<span class="sub_pokerHands_name">（One Pair）</span></h3>
                   <img src="./../about/images/onepair.png" alt="ワンペアの役の画像">
                   <p>
-                    同じ数字が1組揃う組み合わせ<br>
-                    43.8%の確率で完成します
+                    同じ数字のカードが2枚と、残り3枚の数字がバラバラのカードの組み合わせ<br>
+                    テキサスホールデムでの確率: 約43.80%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>ペアの数字が強い方が優先されます</li>
+                    <li>ペアの数字が同じ場合は、残りのカード（キッカー）の中で1番強い数字を持つ方が優先され、順に2番目、3番目と続きます</li>
+                    <!-- モーダルで場面をわかりやすく画像とテキストで表示予定 -->
+                  </ul>
                 </div>
                 <div id="highcard" class="pokerHands_content">
-                  <h3>ハイカード</h3>
+                  <h3>ハイカード<span class="sub_pokerHands_name">（High Card / No Pair）</span></h3>
                   <img src="./../about/images/highcard.png" alt="ハイカードの役の画像">
                   <p>
-                    同じ数字の組み合わせや、5枚全てが同じスート、連続する5つの数字などなにも含まれていないなんの役も成立していない状態<br>
-                    17.4%の確率で完成します
+                    どの役もできていない状態<br>
+                    テキサスホールデムでの確率: 約17.40%
                   </p>
+                  <ul class="asterisk" class="pokerHands_content">
+                    <li>役ができたプレイヤーがいない場合、1番強い数字のカードを持っているプレイヤーが勝ちます</li>
+                    <!-- モーダルで場面をわかりやすく画像とテキストで表示予定 -->
+                  </ul>
                 </div>
               </div>
             </div>
