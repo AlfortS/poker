@@ -201,6 +201,30 @@ p:last-child {
   font-weight: bold;
 }
 
+/* margin-top */
+.mt-5 { margin-top: 5px !important;}
+.mt-10 { margin-top: 10px !important;}
+.mt-15 { margin-top: 15px !important;}
+.mt-20 { margin-top: 20px !important;}
+.mt-25 { margin-top: 25px !important;}
+.mt-30 { margin-top: 30px !important;}
+.mt-35 { margin-top: 35px !important;}
+.mt-40 { margin-top: 40px !important;}
+.mt-45 { margin-top: 45px !important;}
+.mt-50 { margin-top: 50px !important;}
+
+/* margin-bottom */
+.mb-5 { margin-bottom: 5px !important;}
+.mb-10 { margin-bottom: 10px !important;}
+.mb-15 { margin-bottom: 15px !important;}
+.mb-20 { margin-bottom: 20px !important;}
+.mb-25 { margin-bottom: 25px !important;}
+.mb-30 { margin-bottom: 30px !important;}
+.mb-35 { margin-bottom: 35px !important;}
+.mb-40 { margin-bottom: 40px !important;}
+.mb-45 { margin-bottom: 45px !important;}
+.mb-50 { margin-bottom: 50px !important;}
+
 /* PC/SPによって表示・非表示 */
 .pc_only {
   display: block;
@@ -215,6 +239,31 @@ p:last-child {
   .sp_only {
     display: block;
   }
+}
+
+/* カーソルデザイン */
+html,body,a{
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  top: -20px; /*座標調整*/
+  left: -20px; /*座標調整*/
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  z-index: 1000;
+  transition: width 0.2s, height 0.2s, top 0.2s, left 0.2s;
+  transform: translate(0, 0);
+  pointer-events: none;
+}
+.cursor.cursor--hover {
+  top: -35px;
+  left: -35px;
+  width: 70px;
+  height: 70px;
+  background: rgba(205, 114, 113, 0.5);
 }
 
 .section {
@@ -320,4 +369,27 @@ p:last-child {
 .btn-transparent-background:hover::before {
   transform-origin: 0% 50%;
   transform: scaleX(1);
+}
+
+/* 注釈文 */
+.asterisk {
+  list-style: none;
+  padding: 0;
+}
+.asterisk li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  color: #515151;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.asterisk li::before {
+  content: '※';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.asterisk li:last-child {
+  margin-bottom: 0;
 }
