@@ -242,13 +242,13 @@ p:last-child {
 }
 
 /* カーソルデザイン */
-html,body,a{
+/* html,body,a{
   cursor: none;
 }
 .cursor {
   position: fixed;
-  top: -20px; /*座標調整*/
-  left: -20px; /*座標調整*/
+  top: -20px;
+  left: -20px;
   width: 40px;
   height: 40px;
   background: rgba(0, 0, 0, 0.7);
@@ -264,19 +264,6 @@ html,body,a{
   width: 70px;
   height: 70px;
   background: rgba(205, 114, 113, 0.5);
-}
-/* @media screen and (max-width: 1024px) {
-  html,body,a{
-    cursor: auto;
-  }
-  .cursor {
-    position: relative;
-    pointer-events: all;
-    background: transparent;
-  }
-  .cursor.cursor--hover {
-    background: none;
-  }
 } */
 
 .section {
