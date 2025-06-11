@@ -112,6 +112,12 @@ h2 {
   }
 }
 /* 役の強さ */
+.pokerHands__table {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
 .pokerHands {
   padding: 30px 0;
 }
